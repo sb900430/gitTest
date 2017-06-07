@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h2>ViewScopeの列</h2>
+        <h:form>
+            あなたの趣味は何ですか：<h:inputText value="#{hobbyViewBean.hobby}"/>
+            <p/>
+            <h:commandButton value="このページで表示"/>
+            <p/>
+            <h:commandButton value="Forwardして表示" action="viewScopeCheckNextPage.xhtml"/>
+            <p/>
+            <h:commandButton value="Redirectして表示" action="viewScopeCheckNextPage.xhtml?faces-redirect=true;"/>
+            <p/>
+        </h:form>
+        あなたの入力した趣味：<h:outputText value="#{hobbyViewBean.hobby}"/>
+    </h:body>
+</html>
+

@@ -44,20 +44,20 @@ public class User implements Serializable{
     private String test4;
     private String test5;
     private String test6;
-    private int test7;
-    private Date test8;
-    private Date test9;
-    private int test10;
+    private String test7;
+    private String test8;
+    private String test9;
+    private String test10;
     private String test11;
     private String test12;
     private String test13;
     private String test14;
     private String test15;
     private String test16;
-    private int test17;
-    private int test18;
-    private Date test19;
-    private Date test20;
+    private String test17;
+    private String test18;
+    private String test19;
+    private String test20;
     private String test21;
     private String test22;
     private String test23;
@@ -69,8 +69,42 @@ public class User implements Serializable{
     private String test29;
     private String test30;
     private String test31;
-    private Date test32;
-    private Date test33;
+    private String test32;
+    private String test33;
+
+//      private String test1;
+//    private String test2;
+//    private String test3;
+//    private String test4;
+//    private String test5;
+//    private String test6;
+//    private int test7;
+//    private Date test8;
+//    private Date test9;
+//    private int test10;
+//    private String test11;
+//    private String test12;
+//    private String test13;
+//    private String test14;
+//    private String test15;
+//    private String test16;
+//    private int test17;
+//    private int test18;
+//    private Date test19;
+//    private Date test20;
+//    private String test21;
+//    private String test22;
+//    private String test23;
+//    private String test24;
+//    private String test25;
+//    private String test26;
+//    private String test27;
+//    private String test28;
+//    private String test29;
+//    private String test30;
+//    private String test31;
+//    private Date test32;
+//    private Date test33;
 
     public String getTest1() {
         return test1;
@@ -120,35 +154,35 @@ public class User implements Serializable{
         this.test6 = test6;
     }
 
-    public int getTest7() {
+    public String getTest7() {
         return test7;
     }
 
-    public void setTest7(int test7) {
+    public void setTest7(String test7) {
         this.test7 = test7;
     }
 
-    public Date getTest8() {
+    public String getTest8() {
         return test8;
     }
 
-    public void setTest8(Date test8) {
+    public void setTest8(String test8) {
         this.test8 = test8;
     }
 
-    public Date getTest9() {
+    public String getTest9() {
         return test9;
     }
 
-    public void setTest9(Date test9) {
+    public void setTest9(String test9) {
         this.test9 = test9;
     }
 
-    public int getTest10() {
+    public String getTest10() {
         return test10;
     }
 
-    public void setTest10(int test10) {
+    public void setTest10(String test10) {
         this.test10 = test10;
     }
 
@@ -200,35 +234,35 @@ public class User implements Serializable{
         this.test16 = test16;
     }
 
-    public int getTest17() {
+    public String getTest17() {
         return test17;
     }
 
-    public void setTest17(int test17) {
+    public void setTest17(String test17) {
         this.test17 = test17;
     }
 
-    public int getTest18() {
+    public String getTest18() {
         return test18;
     }
 
-    public void setTest18(int test18) {
+    public void setTest18(String test18) {
         this.test18 = test18;
     }
 
-    public Date getTest19() {
+    public String getTest19() {
         return test19;
     }
 
-    public void setTest19(Date test19) {
+    public void setTest19(String test19) {
         this.test19 = test19;
     }
 
-    public Date getTest20() {
+    public String getTest20() {
         return test20;
     }
 
-    public void setTest20(Date test20) {
+    public void setTest20(String test20) {
         this.test20 = test20;
     }
 
@@ -320,21 +354,23 @@ public class User implements Serializable{
         this.test31 = test31;
     }
 
-    public Date getTest32() {
+    public String getTest32() {
         return test32;
     }
 
-    public void setTest32(Date test32) {
+    public void setTest32(String test32) {
         this.test32 = test32;
     }
 
-    public Date getTest33() {
+    public String getTest33() {
         return test33;
     }
 
-    public void setTest33(Date test33) {
+    public void setTest33(String test33) {
         this.test33 = test33;
     }
+    
+   
     
     
 }

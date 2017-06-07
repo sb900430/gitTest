@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h2>アンケートご協力ください</h2>
+            <h:outputText value="男性"/>
+            <h:panelGrid columns="1"/>
+            <h:selectOneRadio value="#{answerBean.gender}" required="true">
+                <f:selectItem itemValue="男性" itemLabel="男性"/>
+                <f:selectItem itemValue="女性" itemLabel="女性"/>
+            </h:selectOneRadio>
+
+            <h:outputText value="好きな洋服ブランド"/>
+            <ol>
+                <ui:repeat var="item" value="#{answerBean.brandList}">
+                    <li type="1">#{item}</li>
+                </ui:repeat>
+            </ol>
+            <h:inputText value="#{answerBean.brandName}">
+                <f:validateLongRange minimum="1" maximum="6"/>
+            </h:inputText>
+            <h:commandButton type="submit" value="送信" action="result"/>
+            <h:commandButton type="reset" value="キャンセル"/>
+        </h:form>
+    </h:body>
+</html>
+
